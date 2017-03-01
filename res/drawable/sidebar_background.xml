@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sidebar的背景样式 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <gradient
+        android:angle="90.0"
+        android:endColor="#F2EEE6"
+        android:startColor="#F2EEE6" />
+
+    <corners
+        android:bottomLeftRadius="8dip"
+        android:topLeftRadius="8dip" />
+
+</shape>

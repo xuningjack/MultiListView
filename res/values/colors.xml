@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 边框颜色 -->
+    <color name="border">#C0B9B3</color>
+    <!-- sidebar选中文字颜色 -->
+	<color name="sidebar_selected_background">#3399FF</color>
+	<!-- sidebar的蓝色字体颜色 -->
+	<color name="sidebar_char_color">#635952</color>
+	<!-- 目录选中的颜色 -->
+	<color name="sort_list_selected">#E7DDDE</color>
+</resources>

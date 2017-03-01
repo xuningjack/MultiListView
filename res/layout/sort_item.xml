@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 一级ListView的item布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="15dp"
+        android:background="#FDF4F1"
+        android:text="A"
+        android:textColor="#454545" />
+
+    <!-- 显示的内容区域 -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginRight="15dp"
+        android:paddingLeft="28dp"
+        android:gravity="center_vertical"
+        android:text="hhhh"
+        android:textColor="#336598" 
+        android:background="@drawable/item_selected_style"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/divide" />
+
+</LinearLayout>

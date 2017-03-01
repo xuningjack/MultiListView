@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 支持2级/3级数据源，联动的ListView集合 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <multilistview.sortlist.IMSideBar
+        android:id="@+id/sidebar"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:layout_alignParentRight="true" />
+
+    <!-- 支持2级/3级数据源，联动的ListView集合的布局 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/sidebar"
+        android:orientation="horizontal" >
+
+        <!-- 一级目录 -->
+
+        <ListView
+            android:id="@+id/firstListView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@android:color/white"
+            android:choiceMode="singleChoice"
+            android:divider="@drawable/listitem_divide"
+            android:listSelector="#00000000"
+            android:scrollbars="none" />
+
+        <!-- 二级子目录 -->
+
+        <ListView
+            android:id="@+id/secondListView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-60dp"
+            android:layout_weight="6"
+            android:choiceMode="singleChoice"
+            android:background="@android:color/white"
+            android:visibility="gone" />
+
+        <!-- 三级子目录 -->
+
+        <ListView
+            android:id="@+id/thirdListView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_weight="0"
+            android:choiceMode="singleChoice"
+            android:background="@android:color/white"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>
